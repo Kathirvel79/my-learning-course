@@ -1,0 +1,16 @@
+title: My Learning
+description: Learning Technologies
+template:
+  repo: my-learning-template
+  name: my-learning
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
